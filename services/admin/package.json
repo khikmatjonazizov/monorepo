@@ -1,7 +1,6 @@
 {
   "name": "admin",
   "version": "1.0.0",
-  "main": "./src/index.ts",
   "scripts": {
     "start": "webpack serve --env mode=development",
     "build:dev": "webpack --env mode=development",
