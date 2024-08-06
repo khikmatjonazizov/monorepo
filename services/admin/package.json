@@ -1,5 +1,5 @@
 {
-  "name": "host",
+  "name": "admin",
   "version": "1.0.0",
   "main": "./src/index.ts",
   "scripts": {
