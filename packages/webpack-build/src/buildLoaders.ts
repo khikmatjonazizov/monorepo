@@ -1,9 +1,9 @@
-import { RuleSetRule, type Configuration } from 'webpack';
+import { RuleSetRule } from 'webpack';
 import type { BuildOptions } from './types';
 
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
-export const buildLoaders = (option: BuildOptions): Configuration['module']['rules'] => {
+export const buildLoaders = (option: BuildOptions): RuleSetRule[] => {
   const { mode } = option;
   const isDev = mode === 'development';
 
