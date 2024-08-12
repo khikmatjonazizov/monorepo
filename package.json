@@ -4,5 +4,8 @@
   "workspaces": [
     "packages/*",
     "services/*"
-  ]
+  ],
+  "engines": {
+    "node": ">=20.16.0 < 25"
+  }
 }
