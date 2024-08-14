@@ -6,7 +6,8 @@
     "build:dev": "webpack --env mode=development",
     "build:prod": "webpack --env mode=production",
     "dev": "webpack serve --env mode=development",
-    "type-checker": "tsc --watch"
+    "type-checker": "tsc --watch",
+    "bs": "pnpm build:prod && pnpm serve -s build -l 3001"
   },
   "keywords": [],
   "author": "",
@@ -15,10 +16,14 @@
   "devDependencies": {
     "@types/node": "^22.2.0",
     "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0"
+    "@types/react-dom": "^18.3.0",
+    "serve": "^14.2.3",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
+    "webpack": "^5.93.0"
   },
   "dependencies": {
-    "@packages/webpack-build": "*",
+    "@packages/webpack-build": "workspace:*",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   }
